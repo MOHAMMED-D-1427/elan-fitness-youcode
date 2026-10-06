@@ -48,8 +48,8 @@ button:focus-visible {
   padding: 0 24px;
 }
 
-.section {
-  padding: 96px 0;
+section {
+  padding: 32px 0;
 }
 
 .section-blanche {
