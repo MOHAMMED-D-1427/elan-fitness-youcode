@@ -349,7 +349,7 @@ section {
 .apropos-image {
   flex: 5;
   min-width: 0;
-  height: 360px;
+  transform: scale(0.8);
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(15, 27, 45, 0.15);

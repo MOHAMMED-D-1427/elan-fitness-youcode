@@ -6,12 +6,11 @@ h1{
 form{
     display: flex;
     flex-direction: column;
-        align-self: flex-start;
-
+    align-self: flex-start;
 }
 
 .form-container{
-        display: flex;
+    display: flex;
     /* flex-direction: column; */
     align-items: center;
     justify-content: center;
@@ -31,7 +30,7 @@ textarea{
     padding: 5px;
 }
 
-.form-container input{
+.form-container input:last-child{
     background-color: #FF6B2C;
     border: 1px solid #FF6B2C;
     color: #FFFFFF;
@@ -48,7 +47,7 @@ textarea{
     background-color: #F05817;
 }
 
-.form-container p{
+.form-container label{
     padding: 15px 0 10px;
     font-weight: 600;
 }
