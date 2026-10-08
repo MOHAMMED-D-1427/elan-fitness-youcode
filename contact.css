@@ -65,7 +65,31 @@ textarea{
     margin: 0 43px;
 }
 
-iframe{
+/* iframe{
     width : 400px; 
     height : 250px;
+} */
+
+iframe{
+    width : 300px; 
+    height : 180px;
 }
+
+
+/* ------------------- Contact */
+@media(max-width: 860px){
+    .form-container{
+        flex-direction: column;
+        width: fit-content;
+        margin: 35px auto;
+        padding: 25px;
+    }
+    .separator-line{
+      height: 2px;
+      width: 216px;
+      margin: 43px 0;
+    }
+    form{
+        align-self: unset;
+    }
+} 

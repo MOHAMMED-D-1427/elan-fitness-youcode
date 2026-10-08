@@ -119,6 +119,7 @@ section {
 
 .cartes {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -128,6 +129,8 @@ section {
   border: 1px solid #E5E7EB;
   border-radius: 12px;
   box-shadow: 0 1px 3px rgba(15, 27, 45, 0.08);
+  min-width: 184px;
+
 }
 
 .icone {
@@ -146,7 +149,7 @@ section {
 }
 
 .icone-petite {
-  width: 32px;
+  width: 46px;
   height: 32px;
   border-radius: 50%;
 }
@@ -169,6 +172,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .logo {
@@ -191,6 +195,7 @@ section {
 
 .menu {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
 }
 
@@ -203,11 +208,14 @@ section {
 .menu a:hover {
   color: #FF6B2C;
 }
-
-.menu .lien-actif {
+.menu-pied a:hover {
   color: #FF6B2C;
-  font-weight: 600;
-  border-bottom-color: #FF6B2C;
+}
+
+.lien-actif {
+  color: #FF6B2C;
+  font-weight: 600 !important;
+  border-bottom-color: #FF6B2C !important;
 }
 
 .hero {
@@ -348,7 +356,7 @@ section {
 
 .apropos-image {
   flex: 5;
-  min-width: 0;
+  width: 362px;
   transform: scale(0.8);
   object-fit: cover;
   border-radius: 16px;
@@ -529,6 +537,7 @@ section {
 }
 
 .menu-pied {
+  display: flex;
   gap: 24px;
 }
 
@@ -549,11 +558,81 @@ section {
 
 
 
-
+/* ==================================================================================== */
 /* ========================================== My Style */
 
 .site-logo{
   width: 52px;
   margin-right: 10px;
-
 }
+/* ------------------- Navbar */
+
+@media(max-width: 740px){
+  .en-tete-contenu{
+    position: relative;
+    margin-bottom: 51px;
+  }
+  .menu{
+    justify-content: center;
+    background: white;
+    width: 100vw;
+    position: absolute;
+    top: 81px;
+    right: 0;
+    /* height: 100vh; */
+    padding: 13px;
+    box-shadow: 0 0 8px #b8b8b8;
+  }
+}
+
+
+/* ------------------- Aprops */     
+@media(max-width: 981px){
+  .apropos-image{
+      width: 292px;
+      margin-bottom: 21px;
+  }
+  .apropos-contenu{
+      gap: 0;
+  }
+  .apropos-texte{
+      width: 56%;
+  }
+  .valeurs{
+      gap: 3px;
+  }
+}
+
+        
+@media(max-width: 691px){
+  .apropos-image{
+    display: none;
+  }
+}    
+
+@media(max-width: 606px){
+  .menu-pied{
+    flex-direction: column;
+  }
+}
+@media(max-width: 570px){
+  .valeurs{
+      flex-wrap: wrap;
+      gap: 9px;
+  }
+}
+@media(max-width: 480px){
+    .menu{
+      gap: 13px;
+    }
+    .hero-image{
+      display: none;
+    }
+} 
+
+
+/* ------------------- Programmes */
+
+
+
+
