@@ -47,7 +47,7 @@ textarea{
     background-color: #F05817;
 }
 
-.form-container label{
+.form-container label, .contact-info p{
     padding: 15px 0 10px;
     font-weight: 600;
 }
