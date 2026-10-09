@@ -35,13 +35,16 @@
         <div class="form-container">
             <form>
               <label for="name">Prenom</label>
-              <input placeholder="Saisissez votre prenom" id="name">
+              <input class="custom-input" required
+              placeholder="Saisissez votre prenom" id="name">
               
               <label for="email">Email</label>
-              <input placeholder="Saisissez votre email" id="email">
+              <input class="custom-input" type="email" required
+              placeholder="Saisissez votre email" id="email">
 
               <label for="msg"l>Envoyer un message</label>
-              <textarea placeholder="Saisissez votre message" id="msg"></textarea>
+              <textarea class="custom-input" required
+              placeholder="Saisissez votre message" id="msg"></textarea>
               <input type="submit" value="Envoyer">
             </form>
 

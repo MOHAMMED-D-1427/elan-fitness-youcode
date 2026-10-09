@@ -581,7 +581,7 @@ section {
     right: 0;
     /* height: 100vh; */
     padding: 13px;
-    box-shadow: 0 0 8px #b8b8b8;
+    box-shadow: 0 0 1px 1px #b8b8b8;
   }
 }
 
@@ -611,8 +611,13 @@ section {
 }    
 
 @media(max-width: 606px){
-  .menu-pied{
+  /* .menu-pied{
     flex-direction: column;
+  } */
+  .pied-haut{
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
   }
 }
 @media(max-width: 570px){

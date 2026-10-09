@@ -43,7 +43,7 @@ textarea{
     width: fit-content;
     margin-top: 10px;
 }
-.form-container input:hover{
+.form-container input:last-child:hover{
     background-color: #F05817;
 }
 
@@ -59,7 +59,7 @@ textarea{
 }
 
 .separator-line{
-    height: 434px;
+    height: 257px;
     width: 2px;
     background: #989898;
     margin: 0 43px;
@@ -75,6 +75,11 @@ iframe{
     height : 180px;
 }
 
+.custom-input{
+    padding: 6px;
+    border: 2px solid #80808099;
+    border-radius: 9px;
+}
 
 /* ------------------- Contact */
 @media(max-width: 860px){
